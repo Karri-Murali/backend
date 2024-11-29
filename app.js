@@ -12,10 +12,7 @@ const app = express();
 
 // CORS setup
 const corsOptions = {
-  origin: [
-    "http://localhost:5173", // for local development
-    "https://tourism-frontend-jzur734h5-karri-muralis-projects.vercel.app" // your frontend URL on Vercel
-  ],
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true, // Allow cookies and other credentials to be sent
